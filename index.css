@@ -1,0 +1,162 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.margin-top-24 {
+  margin-top: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.result-section-header {
+  color: rgb(221, 221, 221);
+}
+
+.summary-header {
+  color: grey;
+}
+
+h2 {
+  color: white;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(83, 83, 97);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 24px;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+button:hover {
+  background-color: rgb(57, 57, 188);
+  cursor: pointer;
+}
+
+body {
+  background: #d6e2f0;
+}
+
+main {
+  width: 100vw;
+  border-radius: 16px;
+  box-shadow: 4px 6px 8px rgba(179, 179, 179, 0.397);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+  background-color: white;
+}
+
+main > section {
+  padding: 32px;
+  flex-basis: 50%;
+}
+
+main > section:first-child {
+  background-color: rgb(57, 57, 188);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: rgba(60, 60, 210, 0.918);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle > span:first-child {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.circle > span:not(:first-child) {
+  color: rgb(164, 164, 164);
+  margin-top: 16px;
+}
+
+.remark {
+  color: rgb(221, 221, 221);
+  text-align: center;
+}
+
+.detail-card {
+  border-radius: 4px;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.detail-card > *:nth-child(2) {
+  margin-left: 8px;
+}
+
+.detail-card > *:nth-child(3) {
+  flex-grow: 1;
+  display: inline-flex;
+  justify-content: end;
+}
+
+.mark {
+  color: black;
+}
+
+.base {
+  color: grey;
+}
+
+.reaction {
+  background-color: rgba(255, 85, 85, 0.084);
+  color: rgb(255, 85, 85);
+}
+
+.memory {
+  background-color: #ffb01e14;
+  color: #ffb01e;
+}
+
+.verbal {
+  background-color: #00bb8f14;
+  color: #00bb8f;
+}
+
+.visual {
+  background-color: #1125d616;
+  color: #1125d6;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+  }
+  main > section:first-child {
+    border-radius: 16px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
